@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+
+  <rosparam command="load" file="$(find lio_ekf)/config/urbanNav.yaml" />
+
+  <!-- ROS paramaters -->
+  <arg name="visualize" default="true"/>
+  <arg name="odom_frame" default="odom"/>
+  <arg name="bagfile" default="/mnt/data/urbanNav/20210521/UrbanNav-HK_Whampoa-20210521_sensors.bag"/>
+
+  
+  <param name="outputdir" type="string" value="$(find lio_ekf)/output/urbanNav/20210521/" />
+
+  <!-- Odometry node -->
+  <node pkg="lio_ekf" type="lio_ekf_node" name="lio_ekf_node" output="screen"/>
+
+  <!-- Rosbag player, if bagfile argument was specified -->
+  <group if="$(eval bagfile != '')">
+    <node pkg="rosbag" type="play" name="player" args="$(arg bagfile)" output="screen"/>
+  </group>
+  
+  
+  <!-- Visualizer -->
+  <group if="$(arg visualize)">
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find lio_ekf)/rviz/lio_ekf.rviz"/>
+  </group>
+  
+</launch>
+

@@ -1,0 +1,37 @@
+common:
+    lidar_topic:  "velodyne_points"
+    imu_topic:  "handsfree/imu" 
+
+lidar:
+    deskew: true
+    preprocess: true
+    max_range: 100.0 
+    min_range: 5.0
+    max_points_per_voxel: 20
+    voxel_size: 1
+    max_iteration: 1
+
+imu:
+    # IMU noise parameters
+    arw: [2, 2, 2]          # [deg/sqrt(hr)]
+    vrw: [40, 40, 40]          # [m/s/sqrt(hr)]
+    gbstd: [200.0, 200.0, 200.0]        # [deg/hr]
+    abstd: [500.0, 500.0, 500.0]     # [mGal]
+    corrtime: 1.0                    # [hr]
+
+lio:
+    # initial position std, north, east and down in n-frame. [m, m, m]
+    initposstd: [ 0.01, 0.01, 0.01 ]
+    # initial velocity std, north, east and down speed in n-frame. [m/s, m/s, m/s]
+    initvelstd: [ 0.05, 0.05, 0.05 ]
+    # initial attitude std, roll, pitch and yaw std. [deg, deg, deg]
+    initattstd: [ 0.1, 0.1, 0.1 ]
+
+    extrinsic_T: [0.29, 0.0, 0.15]
+    extrinsic_R: [ 1, 0, 0, 
+                   0, 1, 0, 
+                   0, 0, 1]
+    #transform the imu frame to front-right-down (which is used in the code)
+    imu_tran_R: [1,0,0,
+                 0,-1,0,
+                 0,0,-1]
