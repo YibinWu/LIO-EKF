@@ -5,9 +5,7 @@
   <p align="center">
     <a href="https://arxiv.org/pdf/2311.09887"><img src="https://img.shields.io/badge/Paper-pdf-<COLOR>.svg?style=flat-square" /></a>
     <a href="https://github.com/YibinWu/LIO-EKF"><img src="https://img.shields.io/ros/v/noetic/moveit_msgs.svg" /></a> 
-    <!--
-    <a href="https://github.com/PRBonn/PIN_SLAM/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" /></a> 
-    -->
+    <a href="https://github.com/YibinWu/LIO-EKF/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" /></a> 
     
   </p>
 
