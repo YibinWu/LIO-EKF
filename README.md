@@ -4,7 +4,7 @@
 
   <p align="center">
     <a href="https://arxiv.org/pdf/2311.09887"><img src="https://img.shields.io/badge/Paper-pdf-<COLOR>.svg?style=flat-square" /></a>
-    <a href="https://github.com/YibinWu/LIO-EKF#prerequisites"><img src="https://img.shields.io/ros/v/noetic/moveit_msgs.svg" /></a> 
+    <a href="https://github.com/YibinWu/LIO-EKF"><img src="https://img.shields.io/ros/v/noetic/moveit_msgs.svg" /></a> 
     <!--
     <a href="https://github.com/PRBonn/PIN_SLAM/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" /></a> 
     -->
@@ -20,38 +20,12 @@
 </p>
 
 
-<!-- TABLE OF CONTENTS -->
-<details open="open" style='padding: 10px; border-radius:5px 30px 30px 5px; border-style: solid; border-width: 1px;'>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#prerequisites">Prerequisites</a>
-    </li>
-    <li>
-      <a href="#run-lio-ekf">RUN LIO-EKF</a>
-    </li>
-    <li>
-      <a href="#citation">Citation</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-    <li>
-      <a href="#acknowledgement">Acknowledgement</a>
-    </li>
-  </ol>
-</details>
-
-
 ## 1. Prerequisites
 * Ubuntu OS (tested on 20.04)
 * ROS 
 
   Follow [ROS Noetic installation instructions for Ubuntu 20.04](http://wiki.ros.org/noetic/Installation/Ubuntu).
-* Eigen
-  ```
-  sudo apt install libeigen3-dev
-  ```
+
 
 
 ## 2. RUN LIO-EKF
