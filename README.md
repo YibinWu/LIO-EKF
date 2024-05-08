@@ -67,4 +67,4 @@ If you have any questions, please feel free to contact Mr. Yibin Wu {[yibin.wu@i
 
 
 ## 5. Acknowledgement
-Thanks a lot to [KISS-ICP](https://github.com/PRBonn/kiss-icp) and [KF-GINS](https://github.com/i2Nav-WHU/KF-GINS).
+Thanks a lot to [KISS-ICP](https://github.com/PRBonn/kiss-icp), which has inspired this work, and [KF-GINS](https://github.com/i2Nav-WHU/KF-GINS).
