@@ -11,7 +11,7 @@
 
 </p>
 
-**TL;DR: LIO-EKF is a lightweight LiDAR-inertial odometry system based on adaptive point-to-point registration and EKF.**
+**TL;DR: LIO-EKF is a lightweight yet efficient LiDAR-inertial odometry system based on adaptive point-to-point registration and EKF.**
 
 [![](https://res.cloudinary.com/marcomontalbano/image/upload/v1715181604/video_to_markdown/images/youtube--MoJTqEYl1ME-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/MoJTqEYl1ME "")
 
