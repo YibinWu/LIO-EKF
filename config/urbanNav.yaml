@@ -1,5 +1,5 @@
 common:
-    lid_topic:  "velodyne_points" 
+    lidar_topic:  "velodyne_points" 
     imu_topic:  "imu/data" 
 
 lidar:
