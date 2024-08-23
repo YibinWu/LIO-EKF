@@ -22,7 +22,7 @@
 
   Follow [ROS Noetic installation instructions for Ubuntu 20.04](http://wiki.ros.org/noetic/Installation/Ubuntu).
 
-
+* [Eigen 3.4](https://eigen.tuxfamily.org/index.php?title=Main_Page)
 
 ## 2. RUN LIO-EKF
 
